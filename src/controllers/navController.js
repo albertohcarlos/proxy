@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { logger } = require('../common/logger')
 
-const url = 'https://api.mercadolibre.com/'
+const url = process.env.API_MELI
 
 const searchQuery = async (req, res) => {
     const query = req.params.query
