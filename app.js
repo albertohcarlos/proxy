@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 app.use('/', routes);
-const port = 8081;
+const port = process.env.PORT || 8081;
 app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}`));
 
 
